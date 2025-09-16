@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,6 +41,12 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
+            <Link
+              to="/courses"
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
+              All Courses
+            </Link>
           </div>
 
           {/* Contact Info & CTAs */}

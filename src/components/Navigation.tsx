@@ -29,8 +29,7 @@ const Navigation = () => {
               />
             </div>
             <div className="ml-3">
-              <h1 className="text-xl font-bold text-foreground">GRK Institute</h1>
-              <p className="text-xs text-muted-foreground">Launch Your Tech Career</p>
+              <h1 className="text-2xl font-bold text-foreground bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">GRK Institute</h1>
             </div>
           </div>
 

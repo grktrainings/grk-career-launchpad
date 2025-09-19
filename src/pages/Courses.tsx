@@ -35,32 +35,46 @@ const courses = [
     jobRoles: ["Java Developer", "Full Stack Developer", "Backend Developer", "Software Architect"]
   },
   {
-    id: "digital-marketing",
-    title: "Digital Marketing",
+    id: "devops",
+    title: "DevOps Engineering",
     duration: "4 Months",
-    description: "SEO, SEM, Social Media Marketing, Content Strategy and Analytics mastery",
-    skills: ["SEO", "Google Ads", "Facebook Ads", "Analytics", "Content Marketing"],
-    projects: "Campaign Management, Website Optimization, Brand Strategy",
+    description: "CI/CD, Docker, Kubernetes, Jenkins and infrastructure automation mastery",
+    skills: ["Docker", "Kubernetes", "Jenkins", "Git", "Terraform", "Ansible"],
+    projects: "Infrastructure Automation, CI/CD Pipeline, Container Management",
     placement: "100% Placement Assistance", 
-    price: "₹25,000",
-    popular: false,
-    averageSalary: "₹5.8 LPA",
-    demandLevel: "High",
-    jobRoles: ["Digital Marketing Specialist", "SEO Analyst", "Social Media Manager", "Marketing Executive"]
-  },
-  {
-    id: "devops-aws",
-    title: "DevOps with AWS",
-    duration: "5 Months",
-    description: "CI/CD, Docker, Kubernetes, AWS services and infrastructure automation",
-    skills: ["AWS", "Docker", "Kubernetes", "Jenkins", "Terraform", "Git"],
-    projects: "Infrastructure Automation, CI/CD Pipeline, Cloud Migration",
-    placement: "100% Placement Assistance",
-    price: "₹40,000",
+    price: "₹32,000",
     popular: false,
     averageSalary: "₹8.5 LPA",
     demandLevel: "Extremely High",
-    jobRoles: ["DevOps Engineer", "Cloud Engineer", "Site Reliability Engineer", "Infrastructure Architect"]
+    jobRoles: ["DevOps Engineer", "Cloud Engineer", "Site Reliability Engineer", "Platform Engineer"]
+  },
+  {
+    id: "aws",
+    title: "AWS Cloud Computing",
+    duration: "4 Months",
+    description: "Amazon Web Services certification with hands-on cloud architecture and deployment",
+    skills: ["AWS", "EC2", "S3", "RDS", "Lambda", "CloudFormation"],
+    projects: "Multi-tier Web App, Serverless Pipeline, Hybrid Cloud Setup",
+    placement: "100% Placement Assistance",
+    price: "₹28,000",
+    popular: false,
+    averageSalary: "₹9.2 LPA",
+    demandLevel: "Extremely High",
+    jobRoles: ["Cloud Architect", "Cloud Engineer", "Solutions Architect", "Cloud Security Engineer"]
+  },
+  {
+    id: "digital-marketing",
+    title: "Digital Marketing Mastery",
+    duration: "4 Months",
+    description: "SEO, SEM, Social Media Marketing, Content Strategy and Analytics mastery",
+    skills: ["SEO", "Google Ads", "Facebook Ads", "Analytics", "Content Marketing", "Email Marketing"],
+    projects: "Complete Digital Campaign, E-commerce Growth, Brand Awareness",
+    placement: "100% Placement Assistance", 
+    price: "₹25,000",
+    popular: false,
+    averageSalary: "₹5.5 LPA",
+    demandLevel: "High",
+    jobRoles: ["Digital Marketing Executive", "SEO Specialist", "Social Media Manager", "Marketing Manager"]
   }
 ];
 
@@ -83,7 +97,7 @@ const Courses = () => {
               
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-12">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-secondary mb-2">4</div>
+                  <div className="text-3xl font-bold text-secondary mb-2">5</div>
                   <div className="text-sm opacity-80">Expert Courses</div>
                 </div>
                 <div className="text-center">
@@ -91,7 +105,7 @@ const Courses = () => {
                   <div className="text-sm opacity-80">Students Placed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-secondary mb-2">₹7.2L</div>
+                  <div className="text-3xl font-bold text-secondary mb-2">₹7.5L</div>
                   <div className="text-sm opacity-80">Average Package</div>
                 </div>
                 <div className="text-center">
@@ -115,11 +129,11 @@ const Courses = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {courses.map((course, index) => (
-                <Card key={course.id} className="relative group hover:shadow-glow transition-all duration-300 hover:-translate-y-1 bg-card">
+                <Card key={course.id} className="relative group hover:shadow-glow transition-all duration-300 hover:-translate-y-1 bg-card card-elevated">
                   {course.popular && (
-                    <Badge className="absolute -top-3 left-6 bg-secondary text-secondary-foreground font-semibold px-3 py-1">
+                    <Badge className="absolute -top-3 left-6 bg-secondary text-secondary-foreground font-semibold px-3 py-1 shadow-glow">
                       Most Popular
                     </Badge>
                   )}
@@ -181,16 +195,16 @@ const Courses = () => {
                       
                       <div className="space-y-3">
                         <Link to={`/courses/${course.id}`}>
-                          <Button className="w-full bg-primary hover:bg-primary-dark text-primary-foreground">
+                          <Button className="w-full bg-primary hover:bg-primary-dark text-primary-foreground btn-glow">
                             View Full Details
                             <ArrowRight className="ml-2 h-4 w-4" />
                           </Button>
                         </Link>
                         <div className="grid grid-cols-2 gap-2">
-                          <Button variant="outline" size="sm">
+                          <Button variant="outline" size="sm" className="hover:bg-primary hover:text-primary-foreground">
                             Free Demo
                           </Button>
-                          <Button variant="outline" size="sm">
+                          <Button variant="outline" size="sm" className="hover:bg-primary hover:text-primary-foreground">
                             Download Syllabus
                           </Button>
                         </div>

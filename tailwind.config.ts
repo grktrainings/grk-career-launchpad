@@ -85,6 +85,9 @@ export default {
       boxShadow: {
         "glow": "var(--shadow-glow)",
         "smooth": "var(--shadow-lg)",
+        "red": "var(--shadow-red)",
+        "intense": "0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 30px rgba(220, 38, 38, 0.3)",
+        "card-hover": "0 10px 40px -10px rgba(220, 38, 38, 0.2)",
       },
       keyframes: {
         "accordion-down": {

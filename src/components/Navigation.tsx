@@ -21,12 +21,16 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="bg-gradient-primary w-10 h-10 rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">G</span>
+            <div className="w-12 h-12 flex items-center justify-center">
+              <img 
+                src="/src/assets/grk-logo.png" 
+                alt="GRK Institute Logo" 
+                className="w-10 h-10 object-contain"
+              />
             </div>
             <div className="ml-3">
               <h1 className="text-xl font-bold text-foreground">GRK Institute</h1>
-              <p className="text-xs text-muted-foreground">Launch Your Career</p>
+              <p className="text-xs text-muted-foreground">Launch Your Tech Career</p>
             </div>
           </div>
 

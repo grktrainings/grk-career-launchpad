@@ -28,9 +28,7 @@ const Navigation = () => {
                 className="w-10 h-10 object-contain"
               />
             </div>
-            <div className="ml-3">
-              <h1 className="text-2xl font-bold text-foreground bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">GRK Institute</h1>
-            </div>
+           
           </div>
 
           {/* Desktop Navigation */}
@@ -56,7 +54,7 @@ const Navigation = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Phone className="h-4 w-4" />
-              <span>+91 98765 43210</span>
+              <span>+91 6364456661</span>
             </div>
             <Button className="bg-secondary hover:bg-secondary-dark text-secondary-foreground">
               Enroll Now

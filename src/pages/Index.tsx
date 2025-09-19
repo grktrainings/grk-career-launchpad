@@ -203,9 +203,11 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Contact Info</h4>
               <div className="space-y-2 text-sm opacity-80">
-                <p>+91 98765 43210</p>
-                <p>info@grkinstitute.com</p>
+                <p>+91 6364456661</p>
+                <p>info@grktraining.com</p>
                 <p>Marathahalli & BTM Layout<br />Bangalore, Karnataka</p>
+                <p>Madanapalle <br />Andhra Pradesh</p>
+
               </div>
             </div>
           </div>

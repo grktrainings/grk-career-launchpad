@@ -28,7 +28,7 @@ const ContactSection = () => {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent("Hi! I'm interested in the courses at GRK Institute. Can you provide more information?");
-    window.open(`https://wa.me/919876543210?text=${message}`, '_blank');
+    window.open(`https://wa.me/916364456661?text=${message}`, '_blank');
   };
 
   return (
@@ -57,8 +57,8 @@ const ContactSection = () => {
                   <Phone className="h-5 w-5 text-primary" />
                   <div>
                     <p className="font-medium text-card-foreground">Call Us</p>
-                    <a href="tel:+919876543210" className="text-primary hover:text-primary-dark">
-                      +91 98765 43210
+                    <a href="tel:+916364456661" className="text-primary hover:text-primary-dark">
+                      +91 6364456661
                     </a>
                   </div>
                 </div>

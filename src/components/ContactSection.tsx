@@ -245,7 +245,7 @@ const ContactSection = () => {
               Book Free Demo
             </Button>
             <Button size="lg" variant="outline" className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8">
-              Call Now: +91 98765 43210
+              Call Now: +91 6364456661
             </Button>
           </div>
         </div>

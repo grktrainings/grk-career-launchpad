@@ -45,10 +45,6 @@ const Navigation = () => {
                 className="w-10 h-10 object-contain"
               />
             </div>
-            <div className="ml-2 hidden md:block">
-              <h1 className="text-lg font-bold text-foreground">GRK Institute</h1>
-              <p className="text-xs text-muted-foreground">Launch Your Career</p>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}

@@ -8,7 +8,9 @@ import {
   GitBranch, Shield, Monitor, Zap
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
+import CourseNavigation from "@/components/CourseNavigation";
 import ContactSection from "@/components/ContactSection";
 
 const curriculum = [
@@ -63,9 +65,14 @@ const projects = [
 ];
 
 const DevOps = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
+      <CourseNavigation />
       
       <main className="pt-16">
         {/* Hero Section */}

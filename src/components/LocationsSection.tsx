@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, Clock, Navigation } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Navigation, GraduationCap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const locations = [
   {
@@ -11,7 +12,8 @@ const locations = [
     timings: "Mon-Sat: 9:00 AM - 8:00 PM",
     features: ["Modern Lab", "Library", "Cafeteria", "Parking"],
     landmark: "Vivekananda Layout, Chandra Layout",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0267895384877!2d77.69731647507632!3d12.963898987347654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1306d0d5f0e1%3A0x2e8e4e4e4e4e4e4e!2sMarathahalli%2C%20Bengaluru%2C%20Karnataka%20560037!5e0!3m2!1sen!2sin!4v1234567890"
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0267895384877!2d77.69731647507632!3d12.963898987347654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1306d0d5f0e1%3A0x2e8e4e4e4e4e4e4e!2sMarathahalli%2C%20Bengaluru%2C%20Karnataka%20560037!5e0!3m2!1sen!2sin!4v1234567890",
+    coursesPath: "/courses/marathahalli"
   },
   {
     name: "BTM Layout Campus", 
@@ -21,7 +23,19 @@ const locations = [
     timings: "Mon-Sat: 9:00 AM - 8:00 PM",
     features: ["Smart Classrooms", "Project Lab", "Study Area", "Metro Access"],
     landmark: "Old Madiwala, Maruti Nagar, 1st Stage",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9876543210987!2d77.60987654321098!3d12.916789012345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15c0123456789%3A0x123456789abcdef0!2sBTM%20Layout%2C%20Bengaluru%2C%20Karnataka%20560029!5e0!3m2!1sen!2sin!4v1234567890"
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9876543210987!2d77.60987654321098!3d12.916789012345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15c0123456789%3A0x123456789abcdef0!2sBTM%20Layout%2C%20Bengaluru%2C%20Karnataka%20560029!5e0!3m2!1sen!2sin!4v1234567890",
+    coursesPath: "/courses/btm"
+  },
+  {
+    name: "Madanapalle Campus",
+    address: "Madanapalle, Andhra Pradesh",
+    phone: "+91 6364456661",
+    email: "info@grktraining.com",
+    timings: "Mon-Sat: 9:00 AM - 8:00 PM",
+    features: ["Modern Campus", "Expert Faculty", "Practice Labs", "Placement Support"],
+    landmark: "Madanapalle Town",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.234567890123!2d78.50123456789012!3d13.550987654321098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb268123456789a%3A0x1234567890abcdef!2sMadanapalle%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890",
+    coursesPath: "/courses/madanapalle"
   }
 ];
 
@@ -103,15 +117,19 @@ const LocationsSection = () => {
                     />
                   </div>
                   <div className="space-y-2">
+                    <Link to={location.coursesPath}>
+                      <Button className="w-full bg-primary hover:bg-primary-dark text-primary-foreground">
+                        <GraduationCap className="mr-2 h-4 w-4" />
+                        View Courses at This Campus
+                      </Button>
+                    </Link>
                     <Button 
-                      className="w-full bg-primary hover:bg-primary-dark text-primary-foreground"
+                      className="w-full"
+                      variant="outline"
                       onClick={() => window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location.address)}`, '_blank')}
                     >
                       <Navigation className="mr-2 h-4 w-4" />
                       Get Directions
-                    </Button>
-                    <Button variant="outline" className="w-full">
-                      Schedule Campus Visit
                     </Button>
                   </div>
                 </div>

@@ -10,6 +10,9 @@ import JavaFullStack from "./pages/JavaFullStack";
 import DevOps from "./pages/DevOps";
 import AWS from "./pages/AWS";
 import DigitalMarketing from "./pages/DigitalMarketing";
+import MarathahallCourses from "./pages/MarathahallCourses";
+import BTMCourses from "./pages/BTMCourses";
+import MadanapalleCourses from "./pages/MadanapalleCourses";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +31,9 @@ const App = () => (
           <Route path="/courses/devops" element={<DevOps />} />
           <Route path="/courses/aws" element={<AWS />} />
           <Route path="/courses/digital-marketing" element={<DigitalMarketing />} />
+          <Route path="/courses/marathahalli" element={<MarathahallCourses />} />
+          <Route path="/courses/btm" element={<BTMCourses />} />
+          <Route path="/courses/madanapalle" element={<MadanapalleCourses />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

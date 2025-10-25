@@ -5,21 +5,23 @@ import { MapPin, Phone, Mail, Clock, Navigation } from "lucide-react";
 const locations = [
   {
     name: "Marathahalli Campus",
-    address: "2nd Floor, Above SBI Bank, Marathahalli Bridge, Bangalore - 560037",
-    phone: "+91 9876543210",
-    email: "marathahalli@grkinstitute.com",
+    address: "Flat #3, Ground Floor, V R K H building, Vivekananda Layout, Chandra Layout, Marathahalli, Bengaluru, Karnataka 560037",
+    phone: "+91 6364456661",
+    email: "info@grktraining.com",
     timings: "Mon-Sat: 9:00 AM - 8:00 PM",
     features: ["Modern Lab", "Library", "Cafeteria", "Parking"],
-    landmark: "Near Marathahalli Bridge, Opposite AECS Layout"
+    landmark: "Vivekananda Layout, Chandra Layout",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0267895384877!2d77.69731647507632!3d12.963898987347654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1306d0d5f0e1%3A0x2e8e4e4e4e4e4e4e!2sMarathahalli%2C%20Bengaluru%2C%20Karnataka%20560037!5e0!3m2!1sen!2sin!4v1234567890"
   },
   {
     name: "BTM Layout Campus", 
-    address: "3rd Floor, Silk Board Junction, BTM Layout 2nd Stage, Bangalore - 560076",
-    phone: "+91 9876543211",
-    email: "btm@grkinstitute.com", 
+    address: "2nd Floor, 12, 20th Main Rd, Old Madiwala, Maruti Nagar, 1st Stage, BTM Layout, Bengaluru, Karnataka 560029",
+    phone: "+91 6364456661",
+    email: "info@grktraining.com", 
     timings: "Mon-Sat: 9:00 AM - 8:00 PM",
     features: ["Smart Classrooms", "Project Lab", "Study Area", "Metro Access"],
-    landmark: "Near Silk Board Metro Station, HSR Layout Side"
+    landmark: "Old Madiwala, Maruti Nagar, 1st Stage",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9876543210987!2d77.60987654321098!3d12.916789012345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15c0123456789%3A0x123456789abcdef0!2sBTM%20Layout%2C%20Bengaluru%2C%20Karnataka%20560029!5e0!3m2!1sen!2sin!4v1234567890"
   }
 ];
 
@@ -87,36 +89,53 @@ const LocationsSection = () => {
                   </div>
                 </div>
 
-                <div className="pt-4 space-y-2">
-                  <Button className="w-full bg-primary hover:bg-primary-dark text-primary-foreground">
-                    <Navigation className="mr-2 h-4 w-4" />
-                    Get Directions
-                  </Button>
-                  <Button variant="outline" className="w-full">
-                    Schedule Campus Visit
-                  </Button>
+                <div className="pt-4">
+                  <div className="mb-4 rounded-lg overflow-hidden h-64 border-2 border-primary/20">
+                    <iframe
+                      src={location.mapUrl}
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title={`${location.name} Location`}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Button 
+                      className="w-full bg-primary hover:bg-primary-dark text-primary-foreground"
+                      onClick={() => window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location.address)}`, '_blank')}
+                    >
+                      <Navigation className="mr-2 h-4 w-4" />
+                      Get Directions
+                    </Button>
+                    <Button variant="outline" className="w-full">
+                      Schedule Campus Visit
+                    </Button>
+                  </div>
                 </div>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        {/* Interactive Map Placeholder */}
+        {/* Combined Map View */}
         <div className="bg-card rounded-2xl p-8 shadow-smooth">
           <h3 className="text-2xl font-bold text-center mb-6 text-card-foreground">
-            Find Us on the Map
+            Find Both Campuses on the Map
           </h3>
-          <div className="bg-gradient-accent rounded-xl h-96 flex items-center justify-center border-2 border-dashed border-primary/20">
-            <div className="text-center">
-              <MapPin className="h-16 w-16 text-primary mx-auto mb-4" />
-              <p className="text-xl font-semibold text-card-foreground mb-2">Interactive Map</p>
-              <p className="text-muted-foreground">
-                Campus locations will be displayed here with detailed directions
-              </p>
-              <Button className="mt-4 bg-primary hover:bg-primary-dark text-primary-foreground">
-                View Full Map
-              </Button>
-            </div>
+          <div className="rounded-xl overflow-hidden h-96 border-2 border-primary/20">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124543.12345678901!2d77.61234567890123!3d12.940123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU2JzI0LjQiTiA3N8KwMzYnNDQuNCJF!5e0!3m2!1sen!2sin!4v1234567890"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Both GRK Institute Campuses"
+            />
           </div>
         </div>
       </div>

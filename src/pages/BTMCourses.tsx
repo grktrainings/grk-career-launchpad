@@ -23,7 +23,7 @@ const courses = [
     title: "Java Full Stack Development",
     duration: "6 Months",
     description: "Complete Java, Spring Boot, and React training",
-    price: "₹38,000",
+    price: "₹35,000",
     popular: true,
     path: "/courses/java-fullstack"
   },

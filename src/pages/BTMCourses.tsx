@@ -14,7 +14,7 @@ const courses = [
     title: "Python Full Stack Development",
     duration: "6 Months",
     description: "Master Python, Django, React and deployment",
-    price: "₹45,000",
+    price: "₹35,000",
     popular: true,
     path: "/courses/python-fullstack"
   },
@@ -23,7 +23,7 @@ const courses = [
     title: "Java Full Stack Development",
     duration: "6 Months",
     description: "Complete Java, Spring Boot, and React training",
-    price: "₹48,000",
+    price: "₹38,000",
     popular: true,
     path: "/courses/java-fullstack"
   },
@@ -32,7 +32,7 @@ const courses = [
     title: "DevOps Engineering",
     duration: "4 Months",
     description: "CI/CD, Docker, Kubernetes, Jenkins mastery",
-    price: "₹40,000",
+    price: "₹30,000",
     popular: false,
     path: "/courses/devops"
   },
@@ -41,7 +41,7 @@ const courses = [
     title: "AWS Cloud Computing",
     duration: "3 Months",
     description: "AWS services, architecture, and certification prep",
-    price: "₹35,000",
+    price: "₹30,000",
     popular: false,
     path: "/courses/aws"
   },

@@ -26,7 +26,7 @@ const coursesPreview = [
     title: "Java Full Stack",
     duration: "6 Months", 
     description: "Learn Java, Spring Boot, Microservices, Angular and cloud deployment",
-    price: "₹38,000",
+    price: "₹35,000",
     popular: false,
     averageSalary: "₹7.2 LPA",
     demandLevel: "Very High"
@@ -36,7 +36,7 @@ const coursesPreview = [
     title: "Digital Marketing",
     duration: "4 Months",
     description: "SEO, SEM, Social Media Marketing, Content Strategy and Analytics",
-    price: "₹25,000",
+    price: "₹30,000",
     popular: false,
     averageSalary: "₹5.8 LPA",
     demandLevel: "High"
@@ -46,7 +46,7 @@ const coursesPreview = [
     title: "DevOps with AWS",
     duration: "5 Months",
     description: "CI/CD, Docker, Kubernetes, AWS services and infrastructure automation",
-    price: "₹40,000",
+    price: "₹35,000",
     popular: false,
     averageSalary: "₹8.5 LPA",
     demandLevel: "Extremely High"

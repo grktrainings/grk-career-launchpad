@@ -2,11 +2,11 @@ import { Link, useLocation } from "react-router-dom";
 import { BookOpen } from "lucide-react";
 
 const courses = [
-  { id: "python-fullstack", name: "Python Full Stack", path: "/courses/python-fullstack" },
-  { id: "java-fullstack", name: "Java Full Stack", path: "/courses/java-fullstack" },
-  { id: "devops", name: "DevOps", path: "/courses/devops" },
-  { id: "aws", name: "AWS", path: "/courses/aws" },
-  { id: "digital-marketing", name: "Digital Marketing", path: "/courses/digital-marketing" },
+  { id: "python-fullstack", name: "Python Full Stack", path: "/python-fullstack-development-training-coaching-bangalore" },
+  { id: "java-fullstack", name: "Java Full Stack", path: "/java-fullstack-development-training-coaching-bangalore" },
+  { id: "devops", name: "DevOps", path: "/devops-training-coaching-bangalore" },
+  { id: "aws", name: "AWS", path: "/aws-cloud-training-coaching-bangalore" },
+  { id: "digital-marketing", name: "Digital Marketing", path: "/digital-marketing-training-coaching-bangalore" },
 ];
 
 const CourseNavigation = () => {

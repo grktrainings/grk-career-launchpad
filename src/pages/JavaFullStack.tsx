@@ -440,9 +440,10 @@ const JavaFullStack = () => {
             <div>
               <h4 className="font-semibold mb-4">Other Courses</h4>
               <ul className="space-y-2 text-sm opacity-80">
-                <li><Link to="/courses/python-fullstack" className="hover:opacity-100">Python Full Stack</Link></li>
-                <li><Link to="/courses/digital-marketing" className="hover:opacity-100">Digital Marketing</Link></li>
-                <li><Link to="/courses/devops-aws" className="hover:opacity-100">DevOps with AWS</Link></li>
+                <li><Link to="/python-fullstack-development-training-coaching-bangalore" className="hover:opacity-100">Python Full Stack</Link></li>
+                <li><Link to="/digital-marketing-training-coaching-bangalore" className="hover:opacity-100">Digital Marketing</Link></li>
+                <li><Link to="/devops-training-coaching-bangalore" className="hover:opacity-100">DevOps</Link></li>
+                <li><Link to="/aws-cloud-training-coaching-bangalore" className="hover:opacity-100">AWS Cloud</Link></li>
                 <li><Link to="/courses" className="hover:opacity-100">View All Courses</Link></li>
               </ul>
             </div>

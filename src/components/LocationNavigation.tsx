@@ -2,9 +2,9 @@ import { Link, useLocation } from "react-router-dom";
 import { MapPin } from "lucide-react";
 
 const locations = [
-  { name: "Marathahalli Campus", path: "/courses/marathahalli" },
-  { name: "BTM Layout Campus", path: "/courses/btm" },
-  { name: "Madanapalle Campus", path: "/courses/madanapalle" },
+  { name: "Marathahalli Campus", path: "/courses-training-coaching-marathahalli-bangalore" },
+  { name: "BTM Layout Campus", path: "/courses-training-coaching-btm-bangalore" },
+  { name: "Madanapalle Campus", path: "/courses-training-coaching-madanapalle" },
 ];
 
 const LocationNavigation = () => {

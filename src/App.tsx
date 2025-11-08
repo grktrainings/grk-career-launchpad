@@ -26,14 +26,14 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/courses" element={<Courses />} />
-          <Route path="/courses/python-fullstack" element={<PythonFullStack />} />
-          <Route path="/courses/java-fullstack" element={<JavaFullStack />} />
-          <Route path="/courses/devops" element={<DevOps />} />
-          <Route path="/courses/aws" element={<AWS />} />
-          <Route path="/courses/digital-marketing" element={<DigitalMarketing />} />
-          <Route path="/courses/marathahalli" element={<MarathahallCourses />} />
-          <Route path="/courses/btm" element={<BTMCourses />} />
-          <Route path="/courses/madanapalle" element={<MadanapalleCourses />} />
+          <Route path="/python-fullstack-development-training-coaching-bangalore" element={<PythonFullStack />} />
+          <Route path="/java-fullstack-development-training-coaching-bangalore" element={<JavaFullStack />} />
+          <Route path="/devops-training-coaching-bangalore" element={<DevOps />} />
+          <Route path="/aws-cloud-training-coaching-bangalore" element={<AWS />} />
+          <Route path="/digital-marketing-training-coaching-bangalore" element={<DigitalMarketing />} />
+          <Route path="/courses-training-coaching-marathahalli-bangalore" element={<MarathahallCourses />} />
+          <Route path="/courses-training-coaching-btm-bangalore" element={<BTMCourses />} />
+          <Route path="/courses-training-coaching-madanapalle" element={<MadanapalleCourses />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

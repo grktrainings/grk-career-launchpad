@@ -16,7 +16,7 @@ const courses = [
     description: "Master Python, Django, React and deployment",
     price: "₹35,000",
     popular: true,
-    path: "/courses/python-fullstack"
+    path: "/python-fullstack-development-training-coaching-bangalore"
   },
   {
     id: "java-fullstack",
@@ -25,7 +25,7 @@ const courses = [
     description: "Complete Java, Spring Boot, and React training",
     price: "₹35,000",
     popular: true,
-    path: "/courses/java-fullstack"
+    path: "/java-fullstack-development-training-coaching-bangalore"
   },
   {
     id: "devops",
@@ -34,7 +34,7 @@ const courses = [
     description: "CI/CD, Docker, Kubernetes, Jenkins mastery",
     price: "₹30,000",
     popular: false,
-    path: "/courses/devops"
+    path: "/devops-training-coaching-bangalore"
   },
   {
     id: "aws",
@@ -43,7 +43,7 @@ const courses = [
     description: "AWS services, architecture, and certification prep",
     price: "₹30,000",
     popular: false,
-    path: "/courses/aws"
+    path: "/aws-cloud-training-coaching-bangalore"
   },
   {
     id: "digital-marketing",
@@ -52,7 +52,7 @@ const courses = [
     description: "SEO, Social Media, Google Ads, Analytics",
     price: "₹30,000",
     popular: false,
-    path: "/courses/digital-marketing"
+    path: "/digital-marketing-training-coaching-bangalore"
   }
 ];
 

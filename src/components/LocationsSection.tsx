@@ -13,7 +13,7 @@ const locations = [
     features: ["Modern Lab", "Library", "Cafeteria", "Parking"],
     landmark: "Vivekananda Layout, Chandra Layout",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0267895384877!2d77.69731647507632!3d12.963898987347654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1306d0d5f0e1%3A0x2e8e4e4e4e4e4e4e!2sMarathahalli%2C%20Bengaluru%2C%20Karnataka%20560037!5e0!3m2!1sen!2sin!4v1234567890",
-    coursesPath: "/courses/marathahalli"
+    coursesPath: "/courses-training-coaching-marathahalli-bangalore"
   },
   {
     name: "BTM Layout Campus", 
@@ -24,7 +24,7 @@ const locations = [
     features: ["Smart Classrooms", "Project Lab", "Study Area", "Metro Access"],
     landmark: "Old Madiwala, Maruti Nagar, 1st Stage",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9876543210987!2d77.60987654321098!3d12.916789012345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15c0123456789%3A0x123456789abcdef0!2sBTM%20Layout%2C%20Bengaluru%2C%20Karnataka%20560029!5e0!3m2!1sen!2sin!4v1234567890",
-    coursesPath: "/courses/btm"
+    coursesPath: "/courses-training-coaching-btm-bangalore"
   },
   {
     name: "Madanapalle Campus",
@@ -35,7 +35,7 @@ const locations = [
     features: ["Modern Campus", "Expert Faculty", "Practice Labs", "Placement Support"],
     landmark: "Madanapalle Town",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.234567890123!2d78.50123456789012!3d13.550987654321098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb268123456789a%3A0x1234567890abcdef!2sMadanapalle%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890",
-    coursesPath: "/courses/madanapalle"
+    coursesPath: "/courses-training-coaching-madanapalle"
   }
 ];
 
